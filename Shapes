@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int l=sc.nextInt();
+        int w=sc.nextInt();
+        int r=sc.nextInt();
+        int b1=sc.nextInt();
+        int b2=sc.nextInt();
+        int side=sc.nextInt();
+        System.out.println("Perimeter of Square:"+(4*a));
+        int rec=2*(l+w);
+        System.out.println("Perimeter of Rectangle:"+rec);
+        Double cir=2*Math.PI*r;
+        System.out.printf("Perimeter of Circle:%.2f\n",Math.floor(cir*100.0)/100.0);
+        int tri=b1+b2+side;
+        System.out.println("Perimeter of Triangle:"+tri);
+    }
+}
